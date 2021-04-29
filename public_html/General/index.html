@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>JUEGOS</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css.css">
+        <script src="MaquinaAdivina/Game.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+            $("img").hover(function(){
+            $(this).css("height", "400px");
+            $(this).css("width", "400px");
+            $(this).css("opacity", "75%");
+            $(this).css("cursor", "pointer");
+            }, function(){
+            $(this).css("width", "300px");
+            $(this).css("height", "300px");
+            $(this).css("opacity", "99%");
+            });
+            });
+        </script>
+        <script>
+            function ayuda(){
+            $("#divAyuda").load("prueba.txt");
+        }
+        </script>
+
+        
+    </head>
+    
+    <body class="cuerpo">
+    <div align="center" class="titulo1"><h2>SELECCIONA EL JUEGO</h2></div>
+    <div align="center"><img src="Imagenes/adivina.png" onclick=location.reload()></div>
+    <div align="center"><button id="yoadivino" type="button" onclick="location.href='YoAdivino/index.html'">YO ADIVINO.</button></div>
+    <div align="center"><button id="maquinaadivina" type="button" onclick="location.href='MaquinaAdivina/index.html'">MAQUINA ADIVINA</button></div>
+    <div id="date" align="center"><script>document.write(new Date().toDateString());</script> </div>
+    <div align="center" id="cronometro">
+    <h2>Tiempo de Sesión: <span id="segundos"></span></h2>
+    <script type="text/javascript">setInterval('utiles.cronometro()', 1000)</script>
+    </div>
+    <div id="divAyuda" align="center">
+        <button id="yoadivino" onclick="ayuda()">AYUDA.</button>
+    </div>
+    
+    
+    <p id="demo"></p>
+    <p align="center" id="tiempoRestante"></p>
+    </body>
+    
+</html>

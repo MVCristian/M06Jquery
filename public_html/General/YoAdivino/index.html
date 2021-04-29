@@ -1,0 +1,70 @@
+<html>
+    <head>
+        <title>DIFICULTAD</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="../MaquinaAdivina/Game.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="../css.css">
+        <script>
+            $(document).ready(function(){
+            $("img").hover(function(){
+            $(this).css("height", "400px");
+            $(this).css("width", "400px");
+            $(this).css("opacity", "75%");
+            $(this).css("cursor", "pointer");
+            }, function(){
+            $(this).css("width", "300px");
+            $(this).css("height", "300px");
+            $(this).css("opacity", "99%");
+            });
+            });
+        </script>
+        <script>
+            function ayuda(){
+            $("#divAyuda").load("ayudaYoAdivino.txt");
+        }
+        </script>
+    </head>
+    
+    <body class="cuerpo">
+        <div align="center"><h2>SELECCIONA LA DIFICULTAD</h2></div>
+        <div align="center"><img src="../Imagenes/adivina.png" onclick=location.reload()></div>
+        <div align="center">
+        
+        
+        <form id="form">
+            <li>
+            <input type="radio" name="pulsado" id="facil">
+            <label for="facil">Fácil, del 1 al 10</label>
+            </li>
+            <li>
+            <input type="radio" name="pulsado" id="medio">
+            <label for="medio">Medio, del 1 al 50</label>
+            </li>
+            <li>
+            <input type="radio" name="pulsado" id="dificil">
+            <label for="dificil">Dificil, del 1 al 100</label>
+            </li>
+        </form>
+          <div align="center" id="caja2">
+          <input id="minum" type="text" style="display: none;">
+          <button id="verificar" onclick="pruebados.comprobar()" style="display: none;">Comprobar</button>
+          <button name="button" id="empezar" onclick="pruebados.comenzar()">Empezar</button> 
+          <div id="date"><script>document.write(new Date().toDateString());</script> </div>
+          <div id="cronometro">
+            <h2>Tiempo de Sesión: <span id="segundos"></span></h2>
+            <script type="text/javascript">setInterval('utiles.cronometro()', 1000)</script>
+          </div>
+          <p id="demo"></p>
+          <div id="divAyuda" align="center">
+            <button id="yoadivino" onclick="ayuda()">AYUDA.</button>
+          </div>          
+          <p id="mensaje"></p>
+          <div id="muestra2"></div>
+          <p align="center" id="tiempoRestante"></p>
+        </div>
+        
+    </body>
+    
+</html>

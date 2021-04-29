@@ -1,0 +1,6 @@
+Para poder empezar a jugar a uno de los 2 juegos, tenemos que seleccionar uno de los 2 botones que tenenmos.
+El boton Yo Adivino nos lleva al juego donde la maquina se pensara un numero entre el 1 al 10, 1 al 50 o 1 al 100 (dependiendo la dificultad seleccionada)
+Una vez hayamos seleccionado la dificultad tendremos un tiempo antes de que se acabe la partida para adivinar el número que la maquina se haya pensado.
+
+El boton Maquina Adivina es un juego donde nosotros nos tendremos que pensar un número entre el 1 al 10, 1 al 50 o 1 al 100 (dependiendo la dificultad seleccionada)
+Y la maquina intentará adivinarlo, eso si, no hagamos trampas ya que la maquina se dará cuenta.

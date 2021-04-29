@@ -1,0 +1,12 @@
+body{
+    font-family: fantasy;
+}
+
+.cuerpo{
+    background-image: url("Imagenes/1941.jpg");
+}
+img {
+    width: 300px;
+    height: 300px;
+}
+ 

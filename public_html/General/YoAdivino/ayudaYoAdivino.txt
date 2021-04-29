@@ -1,0 +1,13 @@
+¿Como se juega?
+Para jugar tendremos que seleccionar entre las 3 dificultades que tenemos, todas se diferencian entre si pero tienen en mismo objetivo, adivinar el número.
+DIFICULTAD FÁCIL:
+La dificultad fácil consta de un juego donde tendremos que adivinar un número aleatorio entre el 1 al 10 que se haya pensado la máquina y tendremos de 15 segundos para adivinarlo.
+No podremos hacer trampas ya que la maquina se dará cuenta, y para empezar nueva partida, tendremos que recargar la pagina.
+
+DIFICULTAD MEDIA:
+La dificultad media consta de un juego donde tendremos que adivinar un número aleatorio entre el 1 al 50 que se haya pensado la máquina y tendremos de 35 segundos para adivinarlo.
+No podremos hacer trampas ya que la maquina se dará cuenta, y para empezar nueva partida, tendremos que recargar la pagina.
+
+DIFICULTAD DIFICIL:
+La dificultad dificil consta de un juego donde tendremos que adivinar un número aleatorio entre el 1 al 100 que se haya pensado la máquina y tendremos de 60 segundos para adivinarlo.
+No podremos hacer trampas ya que la maquina se dará cuenta, y para empezar nueva partida, tendremos que recargar la pagina. 
